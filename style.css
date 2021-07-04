@@ -9,22 +9,68 @@
 body {
   font-size: 23pt;
   font-family: var(--font);
-  background-color: var(--primary);
+  background-color: var(--primary-white);
+  padding: 16px;
+}
+
+header {
+    padding: 10px;
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+}
+
+.above-login {
+    display: flex;
+    flex-direction: row;
+}
+
+.above-login img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.menu-list {
+    display: flex;
+    align-self: flex-end;
+}
+
+header ul li {
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+#sticky-header p {
+    background-color: var(--secondary-grey);
+    color: var(--primary-white);
+    font-weight: bold;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + main {
+    padding-top: 102px;
 }
 
 h1 {
-  color: var(--primary-black);
-  font-size: 33pt;
-  text-align: center;
+  /* color: var(--primary-black); */
+  /* font-size: 33pt; */
+  /* text-align: center; */
+  display: none;
+}
+
+header img {
+    width: 100%;
+    max-width: 1200px;
 }
 
 main {
   display: block;
   margin: auto;
-}
-
-main  {
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 .buttons {
@@ -53,6 +99,31 @@ button:hover, button:focus {
   animation: hover 800ms infinite alternate linear;
 }
 
+.mission {
+    background-color: var(--secondary-red);
+    color: var(--primary-white);
+    text-align: center;
+}
+
+.mission :first-child p {
+    font-weight: bold;
+}
+
+/* need to fix the bold of the first paragraph only */
+
+.options {
+    display: flex;
+}
+
+.gallery {
+    display: flex;
+    background-color: var(--secondary-red opacity .5);
+}
+
+.gallery img {
+    margin: 20px 10px;
+    background-color: #d61d55; fill-opacity: .75;
+}
 /* everything under this line is copied from last assignment  */
 
 

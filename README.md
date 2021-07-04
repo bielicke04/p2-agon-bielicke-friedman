@@ -12,3 +12,8 @@ To do list:
 Completed:
 
 * Images and mock ups saved to repo
+
+References:
+
+* Sticky header: https://www.w3schools.com/howto/howto_js_sticky_header.asp
+* Sticky footer from Heather's class or https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers
