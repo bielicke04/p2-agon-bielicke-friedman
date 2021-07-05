@@ -10,49 +10,14 @@ body {
   font-size: 23pt;
   font-family: var(--font);
   background-color: var(--primary-white);
-  padding: 16px;
+  /* padding: 16px 0; */
+  max-width: 1200px;
 }
 
 header {
-    padding: 10px;
+    /* padding: 10px 0; */
     background-color: var(--primary-white);
     color: var(--primary-black);
-}
-
-.above-login {
-    display: flex;
-    flex-direction: row;
-}
-
-.above-login img {
-    width: 100%;
-    max-width: 250px;
-}
-
-.menu-list {
-    display: flex;
-    align-self: flex-end;
-}
-
-header ul li {
-    list-style-type: none;
-    justify-content: flex-end;
-}
-
-#sticky-header p {
-    background-color: var(--secondary-grey);
-    color: var(--primary-white);
-    font-weight: bold;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + main {
-    padding-top: 102px;
 }
 
 h1 {
@@ -62,10 +27,63 @@ h1 {
   display: none;
 }
 
-header img {
+.above-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.above-login img {
+    width: 100%;
+    max-width: 250px;
+    margin-left: 15px;
+}
+
+.header-menu {
+    text-align: flex-end;
+}
+
+.menu-list {
+    display: flex;
+}
+
+header ul li {
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+#sticky-header p {
+    background-color: var(--secondary-grey);
+    color: var(--primary-white);
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky {
+    /* padding-top: 102px; */
+}
+
+.hero-image {
     width: 100%;
     max-width: 1200px;
 }
+
+/* for the overlay, is it easier to just make the change in Ps and save new image? - E */
+
+.overlay {
+    color: var(--secondary-red);
+    z-index: 2;
+}
+
+
 
 main {
   display: block;
@@ -112,8 +130,6 @@ button:hover, button:focus {
 .mission h2 {
     color: var(--primary-white);
 }
-
-/* need to fix the bold of the first paragraph only */
 
 .options {
     display: flex;
