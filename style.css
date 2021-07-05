@@ -138,9 +138,9 @@ button:hover, button:focus {
     padding-top: 15px;
 }
 
-.options {
-    display: flex;
-}
+/* .options { */
+    /* display: flex; */
+/* } */
 
 /* I need help figuring out the numbers behind the text - E */
 
@@ -153,9 +153,9 @@ https://www.colorhexa.com/d61d55
 */
 /*  */
 .reviews {
-    display: flex;
+    /* display: flex; */
     background-color: #f08dab;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 
 /* i can't get this to flex correctly - E */
@@ -197,6 +197,17 @@ footer {
 footer img {
     margin: 15px;
 }
+
+@media screen and (min-width: 500px) {
+  .options {
+    display: flex;
+  }
+  .reviews {
+      display: flex;
+      flex-direction: row;
+  }
+
+} 
 
 /* everything under this line is copied from last assignment  */
 
