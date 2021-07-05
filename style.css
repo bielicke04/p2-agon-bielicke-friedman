@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --primary-white: #ffffff;
     --primary-black: #2d292b;
@@ -67,9 +72,9 @@ header ul li {
     width: 100%;
 }
 
-.sticky {
+/* .sticky { */
     /* padding-top: 102px; */
-}
+/* } */
 
 .hero-image {
     width: 100%;
@@ -87,7 +92,6 @@ header ul li {
 
 main {
   display: block;
-  margin: auto;
   max-width: 1200px;
 }
 
@@ -125,23 +129,60 @@ button:hover, button:focus {
     background-color: var(--secondary-red);
     color: var(--primary-white);
     text-align: center;
+    padding: 15px 60px 15px 60px;
 }
 
 .mission h2 {
     color: var(--primary-white);
+    margin: 0;
+    padding-top: 15px;
 }
 
 .options {
     display: flex;
 }
 
-.gallery {
-    display: flex;
-    background-color: var(--secondary-red);
+/* I need help figuring out the numbers behind the text - E */
+
+.options article {
+    padding: 50px 25px;
 }
 
-.gallery img {
+/* i looked up a lighter tint as i could not make the opacity coding work - E 
+https://www.colorhexa.com/d61d55
+*/
+/*  */
+.reviews {
+    display: flex;
+    background-color: #f08dab;
+    flex-direction: row;
+}
+
+/* i can't get this to flex correctly - E */
+
+.reviews-image {
+    /* max-width: 30%; */
+    align-content: center;
+}
+
+.reviews-image img {
     margin: 20px 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.reviews-text {
+    background-color: var(--primary-white);
+    margin: 25px;
+    padding: 50px;
+    border-color: var(--secondary-grey);
+    border-style: solid;
+    border-width: 10px;
+    max-width: 40%;
+}
+
+.right-justify {
+    text-align: right;
 }
 
 footer {
@@ -149,8 +190,13 @@ footer {
     border-top-style: solid;
     border-top-width: 5px;
     background-color: var(--secondary-grey);
+    display: flex;
+    justify-content: space-between;
 }
 
+footer img {
+    margin: 15px;
+}
 
 /* everything under this line is copied from last assignment  */
 
