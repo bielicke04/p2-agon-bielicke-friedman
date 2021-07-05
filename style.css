@@ -73,6 +73,10 @@ main {
   max-width: 1200px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .buttons {
   margin-top: 10px;
   display: flex;
@@ -105,8 +109,8 @@ button:hover, button:focus {
     text-align: center;
 }
 
-.mission :first-child p {
-    font-weight: bold;
+.mission h2 {
+    color: var(--primary-white);
 }
 
 /* need to fix the bold of the first paragraph only */
@@ -117,13 +121,21 @@ button:hover, button:focus {
 
 .gallery {
     display: flex;
-    background-color: var(--secondary-red opacity .5);
+    background-color: var(--secondary-red);
 }
 
 .gallery img {
     margin: 20px 10px;
-    background-color: #d61d55; fill-opacity: .75;
 }
+
+footer {
+    border-top-color: var(--primary-white);
+    border-top-style: solid;
+    border-top-width: 5px;
+    background-color: var(--secondary-grey);
+}
+
+
 /* everything under this line is copied from last assignment  */
 
 
