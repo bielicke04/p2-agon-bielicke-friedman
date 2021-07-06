@@ -15,8 +15,8 @@ body {
   font-size: 23pt;
   font-family: var(--font);
   background-color: var(--primary-white);
-  /* padding: 16px 0; */
-  max-width: 1200px;
+  /* padding: 16px 0; 
+  max-width: 1200px;*/
 }
 
 header {
@@ -78,7 +78,7 @@ header ul li {
 
 .hero-image {
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px;*/
 }
 
 /* for the overlay, is it easier to just make the change in Ps and save new image? - E */
@@ -92,7 +92,7 @@ header ul li {
 
 main {
   display: block;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
 }
 
 .bold {
