@@ -18,13 +18,24 @@ function myFunction() {
   }
 }
 
+// hamburger menu vanilla JS https://codepen.io/sitanotern1337/pen/xyQppZ
+
+let hamburger = document.querySelector('.hamburger');
+let menu = document.querySelector('.navbar');
+let bod = document.querySelector('.container');
+
+hamburger.addEventListener('click', function () {
+  hamburger.classList.toggle('isactive');
+  menu.classList.toggle('active');
+
+});
+
 
 
 // vanilla js hamburger menu https://javascript.plainenglish.io/animated-hamburger-menu-in-vanilla-javascript-79bd97da00b9
 
-var wrapper = document.getElementById("hamburger-wrapper")
-
-wrapper.addEventListener("click", () => {
-  wrapper.classList.toggle("open")
-})
-
+// var wrapper = document.getElementById("hamburger-wrapper")
+// 
+// wrapper.addEventListener("click", () => {
+  // wrapper.classList.toggle("open")
+// })
