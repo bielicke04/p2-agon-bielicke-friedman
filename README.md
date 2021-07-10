@@ -2,9 +2,9 @@
 
 To do list:
 
-1. Manny aiming to work on HTML and CSS sunday lunchtime, do not expect to finish
-2. Manny to figure out drop down menu for weather API (more of a reminder for myself as we talked about it on our call)
-3. TUES: James to work on HomePage tweaks + Media Queries + JS Pop-Up Ad
+1. Manny - slider, hamburger menu
+2. TUES: James to work on HomePage tweaks + Media Queries + JS Pop-Up Ad
+3. Abigail - about page, ad for weather app and link it to James or Manny's weather widget
 
 
 
@@ -17,3 +17,4 @@ References:
 
 * Sticky header: https://www.w3schools.com/howto/howto_js_sticky_header.asp
 * Sticky footer from Heather's class or https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers
+* Hamburger menu: https://javascript.plainenglish.io/animated-hamburger-menu-in-vanilla-javascript-79bd97da00b9

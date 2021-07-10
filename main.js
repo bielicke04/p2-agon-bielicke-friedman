@@ -17,3 +17,14 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+
+
+// vanilla js hamburger menu https://javascript.plainenglish.io/animated-hamburger-menu-in-vanilla-javascript-79bd97da00b9
+
+var wrapper = document.getElementById("hamburger-wrapper")
+
+wrapper.addEventListener("click", () => {
+  wrapper.classList.toggle("open")
+})
+
