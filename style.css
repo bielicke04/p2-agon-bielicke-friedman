@@ -11,12 +11,14 @@
     --font: 'Montserrat', sans-serif;
 }
 
+/*font-family: 'Montserrat', sans-serif;*/
+
 body {
   font-size: 23pt;
   font-family: var(--font);
   background-color: var(--primary-white);
-  /* padding: 16px 0; 
-  max-width: 1200px;*/
+  /* padding: 16px 0;*/
+  max-width: 1900px;
 }
 
 header {
@@ -151,7 +153,6 @@ h1 {
   to {transform: translateX(0px); opacity: 1;}
 }
 
-
 @media screen and (max-width: 1360px) {
   
   .h1 h1 {
@@ -234,13 +235,9 @@ h1 {
   letter-spacing: 0px;
 }
 
-  
- 
-
 }
 
 /******************************** end hamburger styling ************************/
-
 
 
 .header-menu {
@@ -277,21 +274,21 @@ header ul li {
 
 .hero-image {
     width: 100%;
-    /* max-width: 1200px;*/
+    max-width: 1900px;
 }
 
 /* for the overlay, is it easier to just make the change in Ps and save new image? - E */
+
+/* I always find the overlays to be easier to do & control in PS vs CSS - JB */
 
 .overlay {
     color: var(--secondary-red);
     z-index: 2;
 }
 
-
-
 main {
   display: block;
-  /*max-width: 1200px;*/
+  max-width: 1900px;
 }
 
 .bold {
@@ -396,6 +393,94 @@ footer {
 footer img {
     margin: 15px;
 }
+
+/******** Shows Pages Styling ************/
+
+section.show-blocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+li.shows-bold {
+  color: #d61d55;
+  font-weight: 600;
+}
+
+.shows-hero-image {
+  width: 100%;
+  max-width: 1900px;
+}
+
+.shows-mission {
+  background-color: var(--secondary-red);
+  color: var(--primary-white);
+  text-align: center;
+  padding: 23px 60px 31px 60px;
+}
+
+.shows-mission h2 {
+  color: var(--primary-white);
+  margin: 2px 25% 11px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 28pt;
+  letter-spacing: 2px;
+  line-height: 39px;
+}
+
+p.shows-type {
+  font-size: 14pt;
+  font-family: Montserrat;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: 0px 9%;
+  line-height: 25px;
+}
+
+h2.upcoming-head {
+  color: #d61d55;
+  text-align: center;
+  margin: 20px 0 16px;
+  font-family: Montserrat;
+  font-size: 2.3rem;
+  letter-spacing: 1.25px;
+}
+
+.block-1 {
+  background: #ecebeb;
+  width: 25%;
+  margin: 5px 5px 10px 2%;
+}
+
+.block-1 img{
+  width: 100%;
+}
+
+.block-1 h3{
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 23px;
+  letter-spacing: 1px;
+  margin: 4px 0 3px;
+}
+
+.block-1 p{
+  font-family: Montserrat;
+  font-size: 10pt;
+  font-weight: 300;
+  margin: 7px 7% 11px;
+  line-height: 22px;
+}
+
+button.show-btn {
+  text-align: center;
+  margin: 4px 6% 16px;
+}
+
+/******** Media Queries ************/
 
 @media screen and (min-width: 500px) {
   .options {

@@ -3,7 +3,7 @@
 To do list:
 
 1. Manny - slider, hamburger menu
-2. TUES: James to work on HomePage tweaks + Media Queries + JS Pop-Up Ad
+2. SUN + MON: James to work on HomePage tweaks + JS Pop-Up Ad
 3. Abigail - about page, ad for weather app and link it to James or Manny's weather widget
 
 
