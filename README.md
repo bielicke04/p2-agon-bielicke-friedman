@@ -3,10 +3,10 @@
 To do list:
 
 1. Manny - slider, hamburger menu
-2. SUN + MON: James to work on HomePage tweaks + JS Pop-Up Ad
+2. James – MON to work on HomePage tweaks + JS Pop-Up Ad
 3. Abigail - about page, ad for weather app and link it to James or Manny's weather widget
 
-
+* SHOWS PAGE: can't figure out how to center "ticket request" button in "show blocks". 
 
 Completed:
 
