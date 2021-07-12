@@ -19,3 +19,5 @@ References:
 * Sticky footer from Heather's class or https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers
 * Using this one over the one below it: https://codepen.io/sitanotern1337/pen/xyQppZ
 * Hamburger menu: https://javascript.plainenglish.io/animated-hamburger-menu-in-vanilla-javascript-79bd97da00b9
+* Slider: https://cheewebdevelopment.com/boilerplate-vanilla-javascript-content-slider/
+* Random Quotes: Heather Laude lecture notes from Spring 2021

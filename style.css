@@ -283,7 +283,7 @@ header ul li {
 
 .overlay {
     color: var(--secondary-red);
-    z-index: 2;
+    z-index: 5;
 }
 
 main {
@@ -349,23 +349,98 @@ https://www.colorhexa.com/d61d55
 */
 /*  */
 .reviews {
-    /* display: flex; */
+    display: flex;
     background-color: #f08dab;
-    /* flex-direction: row; */
+    flex-direction: row;
+    z-index: -5;
 }
 
 /* i can't get this to flex correctly - E */
 
-.reviews-image {
+
+/* "reviews" and related classes will need to be updated or reveiwed, should be overwritten but what comes underneath it though- E */
+
+
+
+/* .reviews-image { */
     /* max-width: 30%; */
-    align-content: center;
+    /* align-content: center; */
+/* } */
+/*  */
+/* .reviews-image img { */
+    /* margin: 20px 10px; */
+    /* width: 100%; */
+    /* align-items: center; */
+/* } */
+
+/******************************************************** start homepage image slider **************************************************/
+
+.slide-wrap {
+  position: relative;
+  max-width:1000px;
+  margin: 0 auto;
+  transition:300ms;
 }
 
-.reviews-image img {
-    margin: 20px 10px;
-    width: 100%;
-    align-items: center;
+.slideshow {
+  position: relative;
+  z-index: 15;
 }
+
+.slide-entry {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  text-align: center;
+  z-index: 25;
+  opacity: 0;
+  visibility: hidden;
+  padding: 20px 5%;
+  transition:300ms;
+}
+
+.slide-entry:active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slide-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  z-index: 5;
+}
+  
+.slide-nav li {
+    cursor: pointer;
+    color: var(--secondary-grey);
+    font-size:25px;
+  }
+
+#prev-slide {
+  margin-left:-20px;
+}
+
+#next-slide {
+  margin-right:-20px;
+}
+
+
+
+/******************************************************** end homepage image
+slider **************************************************/
+
+
 
 .reviews-text {
     background-color: var(--primary-white);
