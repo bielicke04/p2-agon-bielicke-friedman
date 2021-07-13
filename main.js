@@ -126,3 +126,7 @@ quote_article.textContent = partnerQuotes[random_integer]; //floor strips decima
 // wrapper.addEventListener("click", () => {
   // wrapper.classList.toggle("open")
 // })
+
+
+// *************** Pizza Pop-Up Ad on "Shows" Page *********************
+
