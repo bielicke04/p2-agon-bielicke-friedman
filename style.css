@@ -596,6 +596,113 @@ a#btn {
   margin: 4px 6% 16px;
 }*/
 
+/******** About Pages Styling ************/
+.about-page{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+.About-header{
+  width: 100%;
+}
+
+.about-hero{
+  width: 100%;
+}
+
+.red-title{
+  color: #d61d55;
+  text-transform: uppercase;
+}
+
+.about-page h2{
+  text-align: center;
+  padding: 2% 0;
+}
+
+.about-page h4{
+  text-align: center;
+  line-height: 45px;
+}
+
+hr{
+  width: 40%;
+  margin: 2% auto;
+}
+
+.about-page p{
+  line-height: 45px;
+  margin-bottom: 1%;
+  padding-bottom: 2%;
+  font-size: 15pt;
+  font-weight: 300;
+}
+
+.about-page .red-section{
+  background-color: #d61d55;
+  margin-top: -1%;
+  width: 100%;
+  max-width: 5000px;
+}
+
+.goal{
+  margin: 0 12%;
+  color: #ffffff;
+}
+
+.photostrip{
+  display: flex;
+  width: 100%;
+  align-content: stretch;
+}
+
+.working-together,
+.support,
+.league{
+  margin: 0 12%;
+}
+
+
+.support-btn{
+  padding: 12px 48px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-red);
+  color: var(--primary-white);
+  transition: 0.3s;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: var(--font);
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 30%;
+  margin: 0 35%;
+  text-align: center;
+}
+
+.support-btn:hover, .support-btn:focus {
+  color: var(--secondary-red);
+  background-color: var(--primary-white);
+  animation: hover 800ms infinite alternate linear;
+  padding: 12px 48px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-grey);
+  color: var(--primary-white);
+  transition: 0.3s;
+  font-weight: 900;
+  font-style: var(--font);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.grey{
+  background-color: rgb(236, 229, 229);
+}
+
 /******** Media Queries ************/
 
 @media screen and (min-width: 500px) {
