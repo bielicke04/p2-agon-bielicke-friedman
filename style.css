@@ -615,6 +615,7 @@ a#btn {
 .red-title{
   color: #d61d55;
   text-transform: uppercase;
+  margin: 3% 0 1.5%;
 }
 
 .about-page h2{
@@ -657,6 +658,10 @@ hr{
   width: 100%;
   align-content: stretch;
 }
+.photostrip img{
+  width: 33.33%;
+}
+
 
 .working-together,
 .support,
@@ -664,9 +669,8 @@ hr{
   margin: 0 12%;
 }
 
-
 .support-btn{
-  padding: 12px 48px;
+  padding: 12px 24px;
   border-radius: 10px;
   border: none;
   background-color: var(--secondary-red);
@@ -678,8 +682,9 @@ hr{
   position: relative;
   cursor: pointer;
   text-transform: uppercase;
-  width: 30%;
-  margin: 0 35%;
+  width: 24%;
+  min-width: 200px;
+  margin: 0 35% 4%;
   text-align: center;
 }
 
@@ -701,6 +706,18 @@ hr{
 
 .grey{
   background-color: rgb(236, 229, 229);
+}
+
+.league {
+  display: flex;
+  flex-direction: column;
+}
+
+.league img{
+  width: 30%;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto 3%;
 }
 
 /******** Media Queries ************/
