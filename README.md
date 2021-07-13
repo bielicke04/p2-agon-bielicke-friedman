@@ -5,6 +5,7 @@ To do list:
 1. Manny - slider, hamburger menu
 2. James – MON to work on HomePage tweaks + JS Pop-Up Ad
 3. Abigail - about page, ad for weather app and link it to James or Manny's weather widget
+4. Abigail, remind me to ask you how you got your terminal to look so pretty. - E
 
 * SHOWS PAGE: can't figure out how to center "ticket request" button in "show blocks". 
 

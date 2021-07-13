@@ -407,6 +407,15 @@ https://www.colorhexa.com/d61d55
     visibility: visible;
   }
 
+.kids-reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .new-reviews { */
+  /* flex-direction: column; */
+/* }  */
+
 .slide-nav {
   display: flex;
   justify-content: space-between;
