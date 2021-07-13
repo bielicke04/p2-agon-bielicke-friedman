@@ -509,7 +509,7 @@ li.shows-bold {
 p.shows-type {
   font-size: 14pt;
   font-family: Montserrat;
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: 1px;
   margin: 0px 9%;
   line-height: 25px;
@@ -518,16 +518,24 @@ p.shows-type {
 h2.upcoming-head {
   color: #d61d55;
   text-align: center;
-  margin: 20px 0 16px;
+  margin: 21px 0 14px;
   font-family: Montserrat;
   font-size: 2.3rem;
   letter-spacing: 1.25px;
 }
 
+h2.shows-bold {
+  border-bottom: 1.1px solid #00000042;
+  padding: 0 0 14px;
+}
+
 .block-1 {
   background: #ecebeb;
   width: 25%;
-  margin: 5px 5px 10px 2%;
+  margin: 10px 2% 23px;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 0px 1px 6px #b1b1b12e;
 }
 
 .block-1 img{
@@ -537,8 +545,8 @@ h2.upcoming-head {
 .block-1 h3{
   font-family: Montserrat;
   text-align: center;
-  font-size: 23px;
-  letter-spacing: 1px;
+  font-size: 21px;
+  letter-spacing: .8px;
   margin: 4px 0 3px;
 }
 
@@ -546,14 +554,35 @@ h2.upcoming-head {
   font-family: Montserrat;
   font-size: 10pt;
   font-weight: 300;
-  margin: 7px 7% 11px;
-  line-height: 22px;
+  margin: 5px 7%;
+  line-height: 21px;
 }
 
-button.show-btn {
+a#btn {
+  background: #d61d55;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px 9px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0px 0 17px;
+}
+
+#btn:hover {
+	background-color: #80777a;
+	transition: .5s;
+}
+
+/*button.show-btn {
   text-align: center;
   margin: 4px 6% 16px;
-}
+}*/
 
 /******** Media Queries ************/
 
