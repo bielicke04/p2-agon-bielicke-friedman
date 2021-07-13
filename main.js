@@ -20,9 +20,9 @@ function myFunction() {
 
 // hamburger menu vanilla JS https://codepen.io/sitanotern1337/pen/xyQppZ
 
-let hamburger = document.querySelector('.hamburger');
-let menu = document.querySelector('.navbar');
-let bod = document.querySelector('.container');
+var hamburger = document.querySelector('.hamburger');
+var menu = document.querySelector('.navbar');
+var bod = document.querySelector('.container');
 
 hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('isactive');
@@ -32,78 +32,115 @@ hamburger.addEventListener('click', function () {
 
 // ******************************* slider for images on homepage reviews section***************************
 
-var slideshow = document.querySelector(".slide-wrap")
-  if (slideshow !=null) {//prevents from running if slideshow is not present
+var slideshow = document.querySelector('.slide-wrap');
+
+if (slideshow != null) { //make sure we don't run this script if the slideshow is not present
+
+  var slides = document.querySelectorAll('.slide-entry')
+    slideCount = slides.length
+    currentSlide = 0
+    slideHeight = null
+    initialHeight = slides[0].clientHeight
+
+  slides[0].classList.add('active'); //on load, activate the first slide
+  slideshow.style.height = initialHeight + 'px';
+
+  function moveToSlide(n) { // set up our slide navigation functionality
+    slides[currentSlide].className = 'slide-entry';
+    currentSlide = (n + slideCount) % slideCount;
+    slides[currentSlide].className = 'slide-entry active';
+    slideHeight = slides[currentSlide].clientHeight;
+    slideshow.style.height = slideHeight + 'px';
+    window.addEventListener('resize', function () {
+      resizedSlideHeight = slides[currentSlide].clientHeight;
+      slideshow.style.height = resizedSlideHeight + 'px';
+    });
   }
 
-var slides = document.querySelectorAll('.slide-entry'), // grab all slides
-  slideCount = slides.length, //count slides
-  currentSlide = 0, // find a starting place for the current slide
-  slideHeight = null, // we'll need this later for height calculation
-  initialHeight = slides[0].clientHeight; // find the height of the first slide
-
-slides[0].classList.add('active');
-slideshow.style.height = initialHeight + 'px';
-
-function moveToSlide(n) { // declare our slide navigation function
-  slides[currentSlide].className = 'slide-entry'; // assign the slide HTML element
-  currentSlide = (n + slideCount) % slideCount; // determine current slide (for prev/next functions)
-  slides[currentSlide].className = 'slide-entry active'; //if it's the current slide, add active class
-  slideHeight = slides[currentSlide].clientHeight; // get the height of the current slide
-  slideshow.style.height = slideHeight + 'px'; // set the height of the slides
-  window.addEventListener('resize', function () { // if the browser resizes
-    resizedSlideHeight = slides[currentSlide].clientHeight; // get current slide height
-    slideshow.style.height = resizedSlideHeight + 'px'; // update the height of the slideshow
-  });
-}
-
-function nextSlide(e) {
-  moveToSlide(currentSlide + 1); // add one to index, move to the next
-};
-function prevSlide(e) {
-  moveToSlide(currentSlide + -1); //remove one from index, move to the last
-};
-
-var slideHandlers = {
-  nextSlide: function (element) { // establish the method to accept any HTML element
-    document.querySelector(element).addEventListener('click', nextSlide); // hook up the selector
-  },
-  prevSlide: function (element) {
-    document.querySelector(element).addEventListener('click', prevSlide);
-  }
-}
-
-/* Hook up the individual HTML elements to the functions */
-
-slideHandlers.nextSlide('#next-slide');
-slideHandlers.prevSlide('#prev-slide');
-
-function nextSlide(e) {
-  moveToSlide(currentSlide + 1);
-  var code = e.keyCode;
-  if (code == 39) { //right arrow key
+  function nextSlide(e) {
     moveToSlide(currentSlide + 1);
-  }
-};
+    var code = e.keyCode;
+    if (code == 39) {
+      moveToSlide(currentSlide + 1);
+    }
+  };
 
-function prevSlide(e) {
-  moveToSlide(currentSlide + -1);
-  var code = e.keyCode;
-  if (code == 37) { //left arrow key
+  function prevSlide(e) {
     moveToSlide(currentSlide + -1);
-  }
-};
+    var code = e.keyCode;
+    if (code == 37) {
+      moveToSlide(currentSlide + -1);
+    }
+  };
 
-var slideHandlers = {
-  nextSlide: function (element) {
-    document.querySelector(element).addEventListener('click', nextSlide);
-    document.body.addEventListener('keydown', nextSlide, false); // if a key is pressed, attach a listener to find out which one
-  },
-  prevSlide: function (element) {
-    document.querySelector(element).addEventListener('click', prevSlide);
-    document.body.addEventListener('keydown', prevSlide, false);
+  var slideHandlers = {
+    nextSlide: function (element) {
+      document.querySelector(element).addEventListener('click', nextSlide);
+      document.body.addEventListener('keydown', nextSlide, false);
+    },
+    
+    prevSlide: function (element) {
+      document.querySelector(element).addEventListener('click', prevSlide);
+      document.body.addEventListener('keydown', prevSlide, false);
+    }
   }
-}
+
+  slideHandlers.nextSlide('#next-slide');
+  slideHandlers.prevSlide('#prev-slide');
+
+  // Dynamic slideshow height
+
+  slideshow.style.height = initialHeight + 'px'; //on load, set the height of the slider to the first active slide
+
+  window.addEventListener('resize', function () { // adjust the height of the slidehow as the browser is resized
+    var resizedHeight = slides[0].clientHeight;
+    slideshow.style.height = resizedHeight + 'px';
+  });
+
+  // Detect swipe events for touch devices, credit to Kirupa @ https://www.kirupa.com/html5/detecting_touch_swipe_gestures.htm
+  // var initialX = null;
+  // var initialY = null;
+  // function startTouch(e) {
+    // initialX = e.touches[0].clientX;
+    // initialY = e.touches[0].clientY;
+  // };
+  // function moveTouch(e) {
+    // if (initialX === null) {
+      // return;
+    // }
+    // if (initialY === null) {
+      // return;
+    // }
+    // var currentX = e.touches[0].clientX;
+    // var currentY = e.touches[0].clientY;
+    // var diffX = initialX - currentX;
+    // var diffY = initialY - currentY;
+    // if (Math.abs(diffX) > Math.abs(diffY)) {
+      // if (diffX > 0) {
+        // swiped left
+        // moveToSlide(currentSlide + 1);
+      // } else {
+        // swiped right
+        // moveToSlide(currentSlide + -1);
+      // }
+    // }
+    // initialX = null;
+    // initialY = null;
+    // e.preventDefault();
+  // };
+
+  // slideshow.addEventListener("touchstart", startTouch, false);
+  // slideshow.addEventListener("touchmove", moveTouch, false);
+
+  // optional autoplay function  
+  // setInterval(function () {
+    // nextSlide();
+  // }, 8000);
+
+} //end slideshow
+
+
+
 
 // *************************** vanilla js for random quotes from heather's class**************************
 

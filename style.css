@@ -353,6 +353,7 @@ https://www.colorhexa.com/d61d55
     background-color: #f08dab;
     flex-direction: row;
     z-index: -5;
+    align-content: space-between;
 }
 
 /* i can't get this to flex correctly - E */
@@ -384,7 +385,7 @@ https://www.colorhexa.com/d61d55
 
 .slideshow {
   position: relative;
-  z-index: 15;
+  z-index: 10;
 }
 
 .slide-entry {
@@ -394,22 +395,22 @@ https://www.colorhexa.com/d61d55
   right: 0;
   margin:0 auto;
   text-align: center;
-  z-index: 25;
+  z-index: 20;
   opacity: 0;
   visibility: hidden;
   padding: 20px 5%;
   transition:300ms;
-}
+} 
 
-.slide-entry:active {
+.slide-entry + .active {
     opacity: 1;
     visibility: visible;
-}
+  }
 
 .slide-nav {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  /* align-items:center; */
   position: absolute;
   left: 0;
   bottom: 0;
@@ -418,13 +419,15 @@ https://www.colorhexa.com/d61d55
   width: 100%;
   list-style: none;
   padding: 0;
-  z-index: 5;
+  z-index: 0;
 }
-  
+
 .slide-nav li {
     cursor: pointer;
-    color: var(--secondary-grey);
-    font-size:25px;
+    color: var(--secondary-red);
+    background-color: var(--secondary-grey);
+    font-size: 150px;
+    z-index: 999;
   }
 
 #prev-slide {
