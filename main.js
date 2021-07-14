@@ -1,3 +1,22 @@
+// Pizza Pop-Up Ad - auto show after 2s of page load //
+
+var popup = document.querySelector('.popup');
+var close = document.querySelector('.close');
+
+window.onload = function(){
+    setTimeout(function(){
+        popup.style.display = "block"
+    }, 2000)
+}
+
+close.addEventListener('click', () => {
+    popup.style.display = "none";
+})
+
+// END
+
+
+
 // Sticky Header https://www.w3schools.com/howto/howto_js_sticky_header.asp
 
 // When the user scrolls the page, execute myFunction 

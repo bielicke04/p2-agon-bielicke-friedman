@@ -591,10 +591,138 @@ a#btn {
 	transition: .5s;
 }
 
-/*button.show-btn {
-  text-align: center;
-  margin: 4px 6% 16px;
-}*/
+/******** Pizza Pop-Up Ad Styling ************/
+
+#pizza {
+  /*min-height: 100vh;
+  background: #c7c7c7;*/
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.contbox {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  border-radius: 35px;
+  display: flex;
+  box-shadow: 1px 3px 15px rgb(0 0 0 / 36%);
+  z-index: 100;
+}
+
+.contbox .imgbox {
+  position: relative;
+  width: 294px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contbox .imgbox::before {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #00973526;
+  border-radius: 50%;
+}
+
+.contbox .imgbox img {
+  position: relative;
+  max-width: 455px;
+  z-index: 1;
+}
+
+.contbox .cont {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contbox .cont h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1em;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.contbox .cont h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 5rem;
+  color: #ea0101;
+  line-height: 1em;
+  margin-bottom: -40px;
+}
+
+.contbox .cont h2 span {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.1rem;
+  color: #009635;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: .5px;
+}
+
+.contbox .cont p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 45px 14px 1px 0;
+  letter-spacing: .2px;
+  line-height: 24px;
+  font-size: 1rem;
+}
+
+.contbox .cont a {
+  display: inline-block;
+  padding: 8px 42px;
+  background: #ea0101;
+  color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 1.6px;
+  font-size: 1.2rem;
+}
+
+.contbox .cont a:hover {
+  cursor: pointer;
+  background-color: #009635;
+  transition: .5s;
+}
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #f3f3f3 url(images/close.png);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 50;
+}
 
 /******************************** About Pages Styling ************/
 .about-page{
@@ -889,7 +1017,6 @@ text-transform: capitalize;
       display: flex;
       flex-direction: row;
   }
-
 } 
 
 @media (min-width: 650px) {
@@ -901,6 +1028,53 @@ text-transform: capitalize;
   font-size: .8em;
 }
 }
+
+/******** Pizza Pop-Up Ad Media Queries ************/
+
+@media (max-width : 750px) {
+  .contbox {
+      width: 300px;
+      height: auto;
+      flex-direction: column;
+      border-radius: 20px;
+  }
+  .contbox .imgbox {
+      height: 200px;
+      transform: translateY(-50px);
+  }
+  .contbox .cont h3 {
+      margin-top: -23px;
+  }
+  .contbox .cont p {
+      margin: 45px 11px 1px;
+  }
+  .contbox .imgbox::before {
+      background: #fff;
+  }
+  .contbox .cont a {
+      margin-bottom: 24px;
+  }
+  .contbox .imgbox img {
+      max-width: 400px;
+      margin: 43px 0 0 56px;
+  }
+  .contbox .cont {
+      height: auto;
+      text-align: center;
+      padding-top: 0;
+  }
+  .close {
+      top: -50px;
+      right: -6px;
+      background: #fff url(images/close.png);
+      background-repeat: no-repeat;
+      background-size: 12px;
+      background-position: center;
+      cursor: pointer;
+  }
+}
+/******** END Pizza Pop-Up Ad Media Queries ************/
+
 
 @media (min-width: 1200px) {
   .goal,
