@@ -3,16 +3,16 @@
 To do list:
 
 1. Manny - slider, hamburger menu
-2. James – MON to work on HomePage tweaks + JS Pop-Up Ad
+2. James – work on rest of Media Queries for "Shows" page
 3. Abigail - about page, ad for weather app and link it to James or Manny's weather widget
 4. Abigail, remind me to ask you how you got your terminal to look so pretty. - E
 
-* SHOWS PAGE: can't figure out how to center "ticket request" button in "show blocks". 
 
 Completed:
 
 * Images and mock ups saved to repo
 * gitignore file - we will need one and add .DS-Store to it
+* Pizza pop-up for "Shows" page
 
 References:
 
@@ -22,3 +22,6 @@ References:
 * Hamburger menu: https://javascript.plainenglish.io/animated-hamburger-menu-in-vanilla-javascript-79bd97da00b9
 * Slider: https://cheewebdevelopment.com/boilerplate-vanilla-javascript-content-slider/
 * Random Quotes: Heather Laude lecture notes from Spring 2021
+* Fade-In Pizza Pop-Up http://jsfiddle.net/SO_AMK/VV2ek/
+* Pop-Up: https://www.youtube.com/watch?v=MBaw_6cPmAw&t=640s
+* Getty Images for Pizza slice
