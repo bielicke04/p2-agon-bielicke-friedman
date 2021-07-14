@@ -174,7 +174,7 @@ function togglePopup(){
 }
 
 var weather = {
-  "apiKey": "3883aac7fce1e7e9ff348e06b041a68b",
+  "apiKey": "c9e8a1e5219afb02e36d02feb8ea798b",
   fetchWeather: function (city) {
       fetch("http://api.openweathermap.org/data/2.5/weather?q="
       + city
