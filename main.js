@@ -184,6 +184,7 @@ var weather = {
       .then((response) => response.json())
       .then((data) => this.displayWeather(data));
   },
+
   displayWeather: function(data) {
       var { name } = data;
       var { country } = data.sys;
@@ -212,7 +213,7 @@ document.querySelector(".search-bar").addEventListener("keyup", function (event)
   }
 });
 
-weather.fetchWeather("St Louis");
+//weather.fetchWeather("St Louis");
 
 
 
