@@ -8,6 +8,7 @@
     --primary-black: #2d292b;
     --secondary-red: #d61d55;
     --secondary-grey: #80777a;
+    --tertiary-grey: #ECE5E5;
     --font: 'Montserrat', sans-serif;
 }
 
@@ -340,6 +341,10 @@ button:hover, button:focus {
 
 /* I need help figuring out the numbers behind the text - E */
 
+.options span {
+  color: var(--secondary-red)
+}
+
 .options article {
     padding: 50px 25px;
 }
@@ -348,13 +353,13 @@ button:hover, button:focus {
 https://www.colorhexa.com/d61d55
 */
 /*  */
-.reviews {
-    display: flex;
-    background-color: #f08dab;
-    flex-direction: row;
-    z-index: -5;
-    align-content: space-between;
-}
+/* .reviews { */
+    /* display: flex; */
+    /* background-color: #f08dab; */
+    /* flex-direction: row; */
+    /* z-index: -5; */
+    /* align-content: space-between; */
+/* } */
 
 /* i can't get this to flex correctly - E */
 
@@ -376,10 +381,14 @@ https://www.colorhexa.com/d61d55
 
 /******************************************************** start homepage image slider **************************************************/
 
+.reviews {
+  background-color: var(--tertiary-grey);
+}
+
 .slide-wrap {
   position: relative;
-  max-width:600px;
-  margin: 0 auto;
+  /* max-width:600px; */
+  /* margin: 0 auto; */
   transition:300ms;
 }
 
@@ -393,8 +402,8 @@ https://www.colorhexa.com/d61d55
   top: 0;
   left: 0;
   right: 0;
-  margin:0 auto;
-  text-align: center;
+  /* margin:0 auto; */
+  /* text-align: center; */
   z-index: 20;
   opacity: 0;
   visibility: hidden;
@@ -407,9 +416,50 @@ https://www.colorhexa.com/d61d55
     visibility: visible;
   }
 
-.kids-reviews {
+.slide-entry .active .slide-content {
+  display: flex;
+  flex-direction: content-reverse;
+}
+
+.slide-content .active {
   display: flex;
   flex-direction: column;
+  max-width: 30%;
+}
+
+.slide-content .active image {
+  width: 100%;
+  max-width: 600px;
+}
+
+.slide-txt .active {
+  max-width: 60%;
+  background-color: var(--primary-white);
+  margin: 25px;
+  padding: 50px;
+  border-color: var(--secondary-grey);
+  border-style: solid;
+  border-width: 10px;
+}
+
+/* .slide-txt p { */
+  /* background-color: var(--primary-white); */
+  /* margin: 25px; */
+  /* padding: 50px; */
+  /* border-color: var(--secondary-grey); */
+  /* border-style: solid; */
+  /* border-width: 10px; */
+  /* max-width: 40%;; */
+/* } */
+
+.slide-text:nth-last-child(1) .slide-entry + .active {
+  color: var(--secondary-red);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.slide-text:last-child .slide-entry + .active {
+  font-weight: bold;
 }
 
 /* .new-reviews { */
@@ -454,15 +504,15 @@ slider **************************************************/
 
 
 
-.reviews-text {
-    background-color: var(--primary-white);
-    margin: 25px;
-    padding: 50px;
-    border-color: var(--secondary-grey);
-    border-style: solid;
-    border-width: 10px;
-    max-width: 40%;
-}
+/* .slide-txt { */
+    /* background-color: var(--primary-white); */
+    /* margin: 25px; */
+    /* padding: 50px; */
+    /* border-color: var(--secondary-grey); */
+    /* border-style: solid; */
+    /* border-width: 10px; */
+    /* max-width: 40%; */
+/* } */
 
 .right-justify {
     text-align: right;
@@ -885,10 +935,10 @@ text-transform: capitalize;
   .options {
     display: flex;
   }
-  .reviews {
-      display: flex;
-      flex-direction: row;
-  }
+  /* .reviews { */
+      /* display: flex; */
+      /* flex-direction: row; */
+  /* } */
 
 } 
 
