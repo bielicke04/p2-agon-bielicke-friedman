@@ -9,6 +9,7 @@ To do list:
 
 Things I need help with:
 1. James, can you copy the code for the buttons to the home page buttons, please? Also, mimic the before|after on the menu items, you have a vertical line on the mock-up, think we can figure that out in CSS? - E
+2. I am having a brain fart, I can't seem to figure out a onclick command to randomize the pics and quotes and I am not getting a console error. Maybe it will come to me in my dreams - E
 
 Completed:
 
