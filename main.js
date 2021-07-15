@@ -37,6 +37,53 @@ function myFunction() {
   }
 }
 
+
+// login/local storage JS from Lee's lecture
+
+var form = document.querySelector('form')
+var firstNameInput = document.getElementById('firstName')
+var lastNameInput = document.getElementById('lastName')
+var highSchoolInput = document.getElementById('highSchool')
+var nameEl = document.getElementById('name')
+var clear = document.querySelector('#clear')
+
+var firstName = localStorage.getItem('first')
+var lastName = localStorage.getItem('last')
+var highSchool = localStorage.getItem('school')
+
+if (firstName && lastName && highSchool) {
+  nameEl.textContent = firstName + " " + lastName + " from " + highSchool
+  firstNameInput.value = firstName
+  lastNameInput.value = lastName
+  highSchoolInput.value = highSchool
+} else {
+  nameEl.textContent = 'Already registered with Broadway Bridges? Please login below!'
+}
+
+form.onsubmit = function (e) {
+  e.preventDefault()
+  firstName = firstNameInput.value
+  lastName = lastNameInput.value
+  highSchool = highSchoolInput.value
+  localStorage.setItem('first', firstName)
+  localStorage.setItem('last', lastName)
+  localStorage.setItem('school', highSchool)
+  nameEl.textContent = "Welcome back, " + firstName + " " + lastName + " from " + highSchool
+}
+
+clear.onclick = function () {
+  firstNameInput.value = ""
+  lastNameInput.value = ""
+  highSchoolInput.value = ""
+  localStorage.setItem("first", "")
+  localStorage.setItem("last", "")
+  localStorage.setItem("school", "")
+  nameEl.textContent = 'Already registered with Broadway Bridges? Please login below!'
+}
+
+
+
+
 // hamburger menu vanilla JS https://codepen.io/sitanotern1337/pen/xyQppZ
 
 var hamburger = document.querySelector('.hamburger');
