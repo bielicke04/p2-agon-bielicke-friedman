@@ -253,6 +253,7 @@ header ul li {
     margin-right: 15px;
 }
 
+form, 
 #sticky-header p {
     background-color: var(--secondary-grey);
     color: var(--primary-white);
@@ -262,11 +263,31 @@ header ul li {
     padding: 10px 0;
 }
 
+form {
+  padding-top: 0px;
+  font-weight: normal;
+}
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
+
+#sticky-header #submit, 
+.sticky #submit {
+  background-color: var(--primary-white);
+  color: var(--primary-black);
+  padding: 5px 10px;
+}
+
+#sticky-header #clear, 
+.sticky #clear {
+  background-color: var(--primary-white);
+  color: var(--secondary-red);
+  padding: 5px 10px;
+}
+
 
 /* .sticky { */
     /* padding-top: 102px; */
