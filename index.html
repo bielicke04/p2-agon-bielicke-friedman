@@ -45,7 +45,24 @@
             </div>
         </div>
         <section class="login" id="sticky-header">
-            <p>Are you already registered with Broadway Bridges? <span>LOGIN HERE</span></p>
+            <p><span id="name">Already registered with Broadway Bridges? Please login below!</span></p>
+            <form>
+                <label for="firstName">
+                    First Name
+                    <input type="text" name="first" id="firstName" pattern="\w{1,20}" required>
+                </label>
+                <label for="lastName">
+                    Last Name
+                    <input type="text" name="last" id="lastName" pattern="\w{1,20}" required>
+                </label>
+                <label for="highSchool">
+                    School
+                    <input type="text" name="school" id="highSchool" pattern="\w{1,20}" required>
+                </label>
+                <button id="submit" type="submit">Submit</button>
+                <button id="clear" type="button">Clear</button>
+            </form>
+                    
         </section>
         <section class="overlay">
            <img class="hero-image" src="./images/kids2.png" alt="Kids posing outside of theatre">
