@@ -221,6 +221,17 @@ var quote_article = document.getElementById("quotes");
 var random_integer = Math.floor(Math.random() * partnerQuotes.length);
 quote_article.textContent = partnerQuotes[random_integer]; //floor strips decimals off, multiply by length of the array, readbook! you can also use quotes.length instead of 4quote_article.innerHTML = quotes[random_integer];
 
+//RANDOM IMAGES
+var r_image = [
+  "images/wf.jpg",
+  "images/buddy.jpg",
+  "images/ronburgundy.jpg",
+  "images/wf_weddingcrashers.jpeg"
+];
+
+var random_image = document.getElementById("my_image"); //number was set earlier for quotes, so does not need to be repeated
+random_image.src = r_image[random_integer];
+
 
 // vanilla js hamburger menu https://javascript.plainenglish.io/animated-hamburger-menu-in-vanilla-javascript-79bd97da00b9
 
