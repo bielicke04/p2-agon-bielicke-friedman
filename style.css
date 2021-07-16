@@ -8,6 +8,7 @@
     --primary-black: #2d292b;
     --secondary-red: #d61d55;
     --secondary-grey: #80777a;
+    --tertiary-red: #f08dab; 
     --tertiary-grey: #ece5e5;
     --font: 'Montserrat', sans-serif;
 }
@@ -389,26 +390,38 @@ button:hover, button:focus {
 
 /* I need help figuring out the numbers behind the text - E */
 
+.options h2 {
+  color: var(--secondary-red);
+}
+
 .options article {
     padding: 50px 25px;
 }
+
+/******************************************************** start homepage image slider **************************************************/
 
 /* i looked up a lighter tint as i could not make the opacity coding work - E 
 https://www.colorhexa.com/d61d55
 */
 /*  */
 .reviews {
-    display: flex;
-    background-color: #f08dab;
-    flex-direction: row;
-    z-index: -5;
-    align-content: space-between;
+    /* display: flex; */
+    background-color: var(--tertiary-red);
+    /* flex-direction: row; */
+    /* z-index: -5; */
+    /* align-content: space-between; */
+}
+
+.reviews h4 {
+  text-align: center;
+  padding: 10px 0px;
 }
 
 /* i can't get this to flex correctly - E */
 
 
-/* "reviews" and related classes will need to be updated or reveiwed, should be overwritten but what comes underneath it though- E */
+/* "reviews" and related classes will need to be updated or reveiwed, should 
+be overwritten but what comes underneath it though- E */
 
 
 
@@ -423,11 +436,10 @@ https://www.colorhexa.com/d61d55
     /* align-items: center; */
 /* } */
 
-/******************************************************** start homepage image slider **************************************************/
 
 .slide-wrap {
   position: relative;
-  max-width:600px;
+  max-width: 90%;
   margin: 0 auto;
   transition:300ms;
 }
@@ -443,7 +455,7 @@ https://www.colorhexa.com/d61d55
   left: 0;
   right: 0;
   margin:0 auto;
-  text-align: center;
+  /* text-align: center; */
   z-index: 20;
   opacity: 0;
   visibility: hidden;
@@ -461,9 +473,36 @@ https://www.colorhexa.com/d61d55
   flex-direction: column;
 }
 
+
+
+
+
+
+.teacher {
+  font-weight: bold;
+  color: var(--secondary-red);
+  font-size: 18px;
+}
+
+.teacher-school {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 /* .new-reviews { */
   /* flex-direction: column; */
 /* }  */
+
+.slide-content {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.slide-img {
+  align-self: center;
+  padding-top: 20px;
+}
 
 .slide-nav {
   display: flex;
@@ -1062,10 +1101,10 @@ text-transform: capitalize;
   .options {
     display: flex;
   }
-  .reviews {
-      display: flex;
-      flex-direction: row;
-  }
+  /* .reviews { */
+      /* display: flex; */
+      /* flex-direction: row; */
+  /* } */
 } 
 
 @media (min-width: 650px) {
