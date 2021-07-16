@@ -62,7 +62,23 @@ clear.onclick = function () {
   nameEl.textContent = 'Already registered with Broadway Bridges? Please login below!'
 }
 
+//  Read more button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_read_more
 
+function myFunction() {
+  var dots = document.getElementById("dots")
+  var moreText = document.getElementById("more")
+  var btnText = document.getElementById("moreBtn")
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline"
+    btnText.textContent = "Read More"
+    moreText.style.display = "none"
+  } else {
+    dots.style.display = "none"
+    btnText.textContent = "Read Less"
+    moreText.style.display = "inline"
+  }
+}
 
 
 // hamburger menu vanilla JS https://codepen.io/sitanotern1337/pen/xyQppZ

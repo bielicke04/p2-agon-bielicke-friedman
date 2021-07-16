@@ -20,6 +20,7 @@ Completed:
 References:
 
 * Sticky header: https://www.w3schools.com/howto/howto_js_sticky_header.asp
+* Readmore button: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_read_more
 * Sticky footer from Heather's class or https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers
 * Using this one over the one below it: https://codepen.io/sitanotern1337/pen/xyQppZ
 * Hamburger menu: https://javascript.plainenglish.io/animated-hamburger-menu-in-vanilla-javascript-79bd97da00b9

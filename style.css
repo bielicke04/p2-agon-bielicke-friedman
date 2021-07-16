@@ -8,6 +8,7 @@
     --primary-black: #2d292b;
     --secondary-red: #d61d55;
     --secondary-grey: #80777a;
+    --tertiary-grey: #ece5e5;
     --font: 'Montserrat', sans-serif;
 }
 
@@ -286,6 +287,33 @@ form {
   background-color: var(--primary-white);
   color: var(--secondary-red);
   padding: 5px 10px;
+}
+
+/* readmore button */
+
+.read-more {
+  font-size: 18px;
+  background-color: var(--tertiary-grey);
+}
+
+.read-more h4 {
+  text-align: center;
+  color: var(--secondary-red);
+  padding: 5px 0 0 0;
+}
+
+.read-more p {
+  padding: 10px;
+}
+
+#more {
+  display: none;
+}
+
+#moreBtn {
+  text-align: center; /* this button is not behaving the way I want it to. it should be centered. - E */
+  padding: 10px 15px;
+  margin: 5px 0 10px 0;
 }
 
 
