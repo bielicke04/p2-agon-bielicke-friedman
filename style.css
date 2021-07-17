@@ -250,6 +250,28 @@ h1 {
     display: flex;
 }
 
+.menu-list a {
+  color: #2d292b;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.menu-list a:hover {
+  color: #ce3939;
+  transition: .5s;
+}
+
+span.menu-bold {
+  color: #ce3939;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+span.menu-bold:hover {
+  color: #2d292b;
+  transition: .5s;
+}
+
 header ul li {
     list-style-type: none;
     margin-right: 15px;
@@ -579,11 +601,6 @@ section.show-blocks {
   align-content: center;
 }
 
-li.shows-bold {
-  color: #d61d55;
-  font-weight: 600;
-}
-
 .shows-hero-image {
   width: 100%;
   max-width: 1900px;
@@ -681,12 +698,8 @@ a#btn {
 
 /******** Pizza Pop-Up Ad Styling ************/
 
-#pizza {
-  /*min-height: 100vh;
-  background: #c7c7c7;*/
-}
 
-.popup {
+.pizzaad {
   position: fixed;
   top: 50%;
   left: 50%;
