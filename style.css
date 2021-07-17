@@ -111,8 +111,9 @@ h1 {
   margin: 0;
   margin-left: 15px;
   padding: 0;
-  float: left;
+  float: right;
   transition: opacity .3s;
+  display: none;
 }
 
 .hamburger:hover {
@@ -194,7 +195,11 @@ h1 {
 @media screen and (max-width: 768px) {
 
 .hamburger {
-  float: right;
+  display: initial;
+}
+
+.menu-list li, .menu-list li a {
+  display: none;
 }
 
 .h1 h1 {
@@ -235,7 +240,7 @@ h1 {
 
 
 .navbar li a {
-  color: var(--secondary-red);
+  color: #fff;
   text-decoration: none;
   padding: 14px 16px;
   font-size: 1em;
@@ -319,15 +324,17 @@ form {
 
 /**************************************** readmore button *****************************************/
 
-.read-more {
-  font-size: 18px;
+
+section.read-more {
   background-color: var(--tertiary-grey);
+  height: 7vh;
 }
 
 .read-more h4 {
+  font-size: 18px;
   text-align: center;
   color: var(--secondary-red);
-  padding: 5px 0 0 0;
+  margin: 20px 0 -12px;
 }
 
 .read-more p {
@@ -340,15 +347,25 @@ form {
 
 .read-btn {
   text-align: center;
-  margin: 18px 0 18px;
+  margin: 15px 0 18px;
 }
 
 a#more-btn {
-  background: #80777a;
-  text-decoration: none;
-  color: #fff;
-  padding: 5px 10px;
+  background-color: var(--secondary-grey);
+  color: var(--primary-white);
+  padding: 5px 20px;
   border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+a#more-btn:hover {
+  background-color: var(--primary-white);
+  color: #d61d55;
+  transition: 0.3s;
 }
 
 .sticky {
