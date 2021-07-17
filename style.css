@@ -328,7 +328,7 @@ form {
 
 section.read-more {
   background-color: var(--tertiary-grey);
-  height: 7vh;
+  /* height: 7vh; if i don't comment this out, the readmore will go behind hero image - E */
 }
 
 .read-more h4 {
@@ -336,10 +336,12 @@ section.read-more {
   text-align: center;
   color: var(--secondary-red);
   margin: 20px 0 -12px;
+  padding: 10px 0;
 }
 
 .read-more p {
   padding: 10px 5%;
+  font-size: 18px;
 }
 
 #more {
@@ -351,7 +353,7 @@ section.read-more {
   margin: 15px 0 18px;
 }
 
-a#more-btn {
+a#moreBtn {
   background-color: var(--secondary-grey);
   color: var(--primary-white);
   padding: 5px 20px;
@@ -363,7 +365,7 @@ a#more-btn {
   font-size: .9rem;
 }
 
-a#more-btn:hover {
+a#moreBtn:hover {
   background-color: var(--primary-white);
   color: #d61d55;
   transition: 0.3s;
