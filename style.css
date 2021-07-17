@@ -51,6 +51,7 @@ h1 {
 .navigation {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .menu-list li,
@@ -278,7 +279,7 @@ span.menu-bold {
 }
 
 span.menu-bold:hover {
-  color: #2d292b;
+  color: #80777a;
   transition: .5s;
 }
 
@@ -876,6 +877,7 @@ span.pizza-bold {
 
 .About-header{
   width: 100%;
+  margin-bottom: 13px;
 }
 
 .about-hero{
