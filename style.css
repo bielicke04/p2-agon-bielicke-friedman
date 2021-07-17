@@ -447,6 +447,27 @@ button:hover, button:focus {
     padding: 50px 25px;
 }
 
+.options button {
+  padding: 12px 48px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-red);
+  color: var(--primary-white);
+  transition: 0.3s;
+  font-weight: 900;
+  font-style: var(--font);
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.options button:hover, 
+.options button:focus {
+  color: var(--secondary-red);
+  background-color: var(--secondary-grey);
+  animation: hover 800ms infinite alternate linear;
+}
+
 /******************************************************** start homepage image slider **************************************************/
 
 /* i looked up a lighter tint as i could not make the opacity coding work - E 
