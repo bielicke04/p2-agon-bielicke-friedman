@@ -351,9 +351,9 @@ a#more-btn {
   border-radius: 5px;
 }
 
-/* .sticky { */
-    /* padding-top: 102px; */
-/* } */
+.sticky {
+    padding-top: 102px;
+}
 
 .hero-image {
     width: 100%;
@@ -547,6 +547,7 @@ be overwritten but what comes underneath it though- E */
 .slide-nav {
   display: flex;
   justify-content: space-between;
+
   position: absolute;
   left: 0;
   bottom: 0;
