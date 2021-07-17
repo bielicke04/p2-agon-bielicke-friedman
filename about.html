@@ -84,7 +84,8 @@
         <section class="weather">
             <h2 class="red-title">Let's Get Started</h2>
             <p>First, apply to be a part of Broadway Bridges. Once we’ve confirmed your eligibility–you must be a teacher, social worker, or administrator at a New York City DOE high school–we will send you a temporary password with which you can login to the site. Once you are registered you will be notified when any new block of tickets goes on sale. Once you confirm your tickets, your order is final.</p>
-            <p><span class="bold"> Make sure you check the weather before you confirm your order.</span></p>
+            <h6><span id="wthr-bold"> Make sure you check the weather before you confirm your order.</span></h6>
+            <a href="#" id="wthr-btn" onclick="togglePopup()">CHECK WEATHER</a>
             
             <div class="popup" id="popup-1">
                 <div class="overlay"></div>
@@ -104,26 +105,26 @@
                                 <h2 class="temp">Temperature</h2>
                                 <div class="weather-box">
                                     <img src="https:/openweathermap.org/img/wn/04n.png" alt="Weather Icon" class="icon" /> 
-                                    <div class="description">Temp Descrip</div>
+                                    <div class="description">Temp Description:</div>
                                 </div>
-                                <div class="humidity">Humidity: 80%</div>
-                                <div class="feels">Feels like: 90°C</div>
+                                <div class="humidity">Humidity: 0%</div>
+                                <div class="feels">Feels like: 0°C</div>
                             </div>
                         </div>
-                    </section>
+            </section>
 
                 </div>
             </div>
-
-            <button onclick="togglePopup()" class="support-btn">Check Weather</button>
+            
+            <!--<button onclick="togglePopup()" class="support-btn">Check Weather</button>-->
             
         </section>
         
         <div class="grey">
         <section class="league">
-            <h2 class="red-title">The Broadway League</h2>
-            <p>THE BROADWAY LEAGUE (Charlotte St. Martin, President) is the national trade association for the Broadway industry. Every year, League members bring Broadway shows to nearly 30 million people in New York City and on tour across North America. The Broadway League also has International members who produce and present Broadway-quality theatre around the world.  In addition, The Broadway League co-presents the Antoinette Perry “Tony” Awards®, for excellence in live theatre.</p>
-            <img src="./images/Red-broadway-league.png" alt="">
+            <h2 class="red-title-two">The Broadway League</h2>
+            <p class="red-p-title">The Broadway League is the national trade association for the Broadway industry. Every year, League members bring Broadway shows to nearly 30 million people in New York City and on tour across North America. The Broadway League also has International members who produce and present Broadway-quality theatre around the world.  In addition, The Broadway League co-presents the Antoinette Perry “Tony” Awards®, for excellence in live theatre.</p>
+            <img src="./images/bl-logo-red.png" alt="">
         </section>
         </div>
         </div>
@@ -131,7 +132,7 @@
 
      <footer>
         <div class="footer-logo">
-            <img src="./images/broadway-league.png" alt="Broadway League Logo">
+            <img src="./images/bl-logo-new.png" alt="Broadway League Logo">
         </div>
         <div class="social-logos">
             <img src="./images/icon-instagram.png" alt="Instagram icon">
@@ -139,5 +140,6 @@
         </div>
     </footer>
     <script src="main.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>

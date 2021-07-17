@@ -63,6 +63,7 @@ h1 {
 .flush-right {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 
@@ -612,7 +613,12 @@ footer {
 }
 
 footer img {
-    margin: 15px;
+  margin: 8px;
+  width: 27%;
+}
+
+.social-logos {
+  margin-top: 16px;
 }
 
 /******** Shows Pages Styling ************/
@@ -849,6 +855,12 @@ a#btn {
   z-index: 50;
 }
 
+span.pizza-bold {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #009635;
+}
+
 /******************************** About Pages Styling ************/
 .about-page{
   display: flex;
@@ -868,7 +880,15 @@ a#btn {
 .red-title{
   color: #d61d55;
   text-transform: uppercase;
-  margin: 3% 0 1.5%;
+  margin: 2% 0 -0.5%;
+  text-align: center;
+}
+
+.red-title-two {
+  color: #d61d55;
+  text-transform: uppercase;
+  margin: 4% 0 1.5%;
+  text-align: center;
 }
 
 .about-page h2{
@@ -889,18 +909,53 @@ hr{
 }
 
 .about-page p{
-  line-height: 45px;
+  line-height: 40px;
   margin-bottom: 1%;
   padding-bottom: 2%;
   font-size: .5em;
   font-weight: 300;
 }
 
+p.red-p-title {
+  font-size: .7em;
+  font-weight: 300;
+  line-height: 42px;
+  margin: -1px 0 33px;
+}
+
+#wthr-btn {
+  background: #d61d55;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px 9px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: -6px 35% 29px;
+  text-align: center;
+  }
+
+  #wthr-btn:hover {
+  background-color: #80777a;
+  transition: .5s;
+  }
+
 .about-page .red-section{
   background-color: #d61d55;
   margin-top: -1.5%;
   width: 100%;
   max-width: 5000px;
+}
+
+h6 {
+  text-align: center;
+  font-size: 1rem;
+  margin: -5px 0 27px;
 }
 
 .goal{
@@ -973,7 +1028,7 @@ hr{
   width: 30%;
   text-align: center;
   align-items: center;
-  margin: 0 auto 3%;
+  margin: 0 auto 5%;
   min-width: 200px;
 }
 
@@ -995,7 +1050,7 @@ hr{
   top:50%;
   left:50%;
   transform:translate(-50%,-50%) scale(0);
-  background:#80777a;
+  background:#75676cf0;
   width:90%;
   max-width:700px;
   height:300px;
@@ -1004,7 +1059,7 @@ hr{
   padding:20px;
   box-sizing:border-box;
   border-radius: 30px;
-  box-shadow: 0px 1px 13px 5px #011b259e;
+  box-shadow: 0px 1px 13px 5px #0000001f;
 }
 
 /*.weather-container {
@@ -1021,8 +1076,8 @@ hr{
 .popup .close-btn {
   cursor:pointer;
   position:absolute;
-  right:20px;
-  top:20px;
+  right: 14px;
+    top: 9px;
   width:30px;
   height:30px;
   background:#222;
@@ -1077,10 +1132,10 @@ border: none;
 outline: none;
 padding: 0.4em 1em;
 border-radius: 24px;
-background: #011e2966;
-color: #fff;
+background: #fff;
+color: #333;
 font-size: .8em;
-width: calc(100% - 100px);
+width: calc(85% - 95px);
 }
 
 .weather{
@@ -1095,22 +1150,27 @@ border: none;
 height: 45px;
 width: 30px;
 outline: none;
-background: #011e2966;
-color: #fff;
+background: #fff;
+color: #333;
 cursor: pointer;
 transition: 0.3s ease-in-out;
+padding: 24px;
 }
 
 .wthr-btn:hover {
-background: #06668a66;
+background: #00000066;
+}
+
+svg {
+  margin: -12px -10px 0;
 }
 
 
 .description {
 /**font-family: 'Montserrat';**/
-font-weight: 300;
-font-size: 1.3rem;
-text-transform: capitalize;
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-transform: capitalize;
   letter-spacing: .75px;
   margin-left: 10px;
   margin-top: 1px;
