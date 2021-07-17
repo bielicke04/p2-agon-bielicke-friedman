@@ -53,8 +53,11 @@ h1 {
   flex-direction: row;
 }
 
-.menu-list li {
+.menu-list li,
+.menu-list li a {
   justify-content: space-around;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .flush-right {
@@ -300,7 +303,7 @@ form {
   padding: 5px 10px;
 }
 
-/* readmore button */
+/**************************************** readmore button *****************************************/
 
 .read-more {
   font-size: 18px;
@@ -314,7 +317,7 @@ form {
 }
 
 .read-more p {
-  padding: 10px;
+  padding: 10px 5%;
 }
 
 #more {
