@@ -8,7 +8,8 @@ To do list:
 4. Abigail, remind me to ask you how you got your terminal to look so pretty. - E
 
 Open items:
-Weather Widget and API requirement, does localstorage count, waiting on answer from Lee
+1. Weather Widget and API requirement, does localstorage count, waiting on answer from Lee.
+2. James, my google fonts returned an error when I tried to validate. When I tried to copy yours, I realized you were using a different font family. Let me know how you want to move forward on this. I might need to update my google fonts code anyway. 
 
 Completed:
 * Images and mock ups saved to repo
