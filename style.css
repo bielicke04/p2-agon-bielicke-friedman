@@ -98,7 +98,6 @@ h1 {
 .navbar li a {
   color: var(--primary-white);
   text-decoration: none;
-  /* font-family: 'Raleway', sans-serif; */
   font-size: 1.6em;
   transition: all .5s;
 }
@@ -256,12 +255,12 @@ h1 {
 /******************************** end hamburger styling ************************/
 
 
-.header-menu {
-    text-align: flex-end;
-}
+/*.header-menu {
+  text-align: flex-end;
+}*/
 
 .menu-list {
-    display: flex;
+  display: flex;
 }
 
 .menu-list a {
@@ -353,7 +352,6 @@ form {
   margin: 5px 0 10px 0;
 }
 
-
 /* .sticky { */
     /* padding-top: 102px; */
 /* } */
@@ -362,10 +360,6 @@ form {
     width: 100%;
     max-width: 1900px;
 }
-
-/* for the overlay, is it easier to just make the change in Ps and save new image? - E */
-
-/* I always find the overlays to be easier to do & control in PS vs CSS - JB */
 
 .overlay {
     color: var(--secondary-red);
@@ -538,8 +532,8 @@ be overwritten but what comes underneath it though- E */
   font-size: 18px;
 }
 
-  .teacher p {
-    padding: 0;
+.teacher p {
+  padding: 0;
 }
 
 .teacher-school {
@@ -554,7 +548,6 @@ be overwritten but what comes underneath it though- E */
 .slide-nav {
   display: flex;
   justify-content: space-between;
-  /* align-items:center; */
   position: absolute;
   left: 0;
   bottom: 0;
@@ -645,7 +638,7 @@ section.show-blocks {
 
 .shows-mission h2 {
   color: var(--primary-white);
-  margin: 2px 25% 11px;
+  margin: 2px 20% 11px;
   font-family: Montserrat;
   font-weight: 600;
   font-size: 28pt;
@@ -669,11 +662,6 @@ h2.upcoming-head {
   font-family: Montserrat;
   font-size: 2.3rem;
   letter-spacing: 1.25px;
-}
-
-h2.shows-bold {
-  border-bottom: 1.1px solid #00000042;
-  padding: 0 0 14px;
 }
 
 .block-1 {
