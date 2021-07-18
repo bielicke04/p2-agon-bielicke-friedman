@@ -1,4 +1,4 @@
-// ******************************* slider for images on homepage reviews section***************************
+// ************** slider for images on homepage reviews section ************************
 
 var slideshow = document.querySelector('.slide-wrap');
 
@@ -108,8 +108,6 @@ if (slideshow != null) { //make sure we don't run this script if the slideshow i
 } //end slideshow
 
 
-
-
 // *************************** vanilla js for random quotes from heather's class**************************
 
 // var partnerQuotes = [
@@ -136,10 +134,3 @@ if (slideshow != null) { //make sure we don't run this script if the slideshow i
 // var random_image = document.getElementById("my_image"); //number was set earlier for quotes, so does not need to be repeated
 // random_image.src = r_image[random_integer];
 // 
-// 
-
-
-
-
-
-
