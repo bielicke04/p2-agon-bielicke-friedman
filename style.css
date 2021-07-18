@@ -19,20 +19,15 @@ body {
   font-size: 23pt;
   font-family: var(--font);
   background-color: var(--primary-white);
-  /* padding: 16px 0;*/
   max-width: 1900px;
 }
 
 header {
-    /* padding: 10px 0; */
-    background-color: var(--primary-white);
-    color: var(--primary-black);
+  background-color: var(--primary-white);
+  color: var(--primary-black);
 }
 
 h1 {
-  /* color: var(--primary-black); */
-  /* font-size: 33pt; */
-  /* text-align: center; */
   display: none;
 }
 
@@ -66,7 +61,6 @@ h1 {
   flex-direction: row;
   align-items: center;
 }
-
 
 /******************************* start hamburger styling **********************/
 
@@ -239,7 +233,6 @@ h1 {
   background-color: var(--secondary-red);
 }
 
-
 .navbar li a {
   color: #fff;
   text-decoration: none;
@@ -284,18 +277,18 @@ span.menu-bold:hover {
 }
 
 header ul li {
-    list-style-type: none;
-    margin-right: 15px;
+  list-style-type: none;
+  margin-right: 15px;
 }
 
 form, 
 #sticky-header p {
-    background-color: var(--secondary-grey);
-    color: var(--primary-white);
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    padding: 10px 0;
+  background-color: var(--secondary-grey);
+  color: var(--primary-white);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0;
 }
 
 form {
@@ -304,9 +297,9 @@ form {
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #sticky-header #submit, 
@@ -323,12 +316,10 @@ form {
   padding: 5px 10px;
 }
 
-/**************************************** readmore button *****************************************/
-
+/************** readmore button *********************/
 
 section.read-more {
   background-color: var(--tertiary-grey);
-  /* height: 7vh; if i don't comment this out, the readmore will go behind hero image - E */
 }
 
 .read-more h4 {
@@ -372,17 +363,17 @@ a#moreBtn:hover {
 }
 
 .sticky {
-    padding-top: 102px;
+  padding-top: 102px;
 }
 
 .hero-image {
-    width: 100%;
-    max-width: 1900px;
+  width: 100%;
+  max-width: 1900px;
 }
 
 .overlay {
-    color: var(--secondary-red);
-    z-index: 5;
+  color: var(--secondary-red);
+  z-index: 5;
 }
 
 main {
@@ -391,7 +382,7 @@ main {
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .buttons {
@@ -421,23 +412,17 @@ button:hover, button:focus {
 }
 
 .mission {
-    background-color: var(--secondary-red);
-    color: var(--primary-white);
-    text-align: center;
-    padding: 15px 60px 15px 60px;
+  background-color: var(--secondary-red);
+  color: var(--primary-white);
+  text-align: center;
+  padding: 15px 60px 15px 60px;
 }
 
 .mission h2 {
-    color: var(--primary-white);
-    margin: 0;
-    padding-top: 15px;
+  color: var(--primary-white);
+  margin: 0;
+  padding-top: 15px;
 }
-
-/* .options { */
-    /* display: flex; */
-/* } */
-
-/* I need help figuring out the numbers behind the text - E */
 
 .options h2 span {
   color: var(--secondary-red);
@@ -468,44 +453,16 @@ button:hover, button:focus {
   animation: hover 800ms infinite alternate linear;
 }
 
-/******************************************************** start homepage image slider **************************************************/
+/************* start homepage image slider ****************/
 
-/* i looked up a lighter tint as i could not make the opacity coding work - E 
-https://www.colorhexa.com/d61d55
-*/
-/*  */
 .reviews {
-    /* display: flex; */
-    background-color: var(--tertiary-grey);
-    /* flex-direction: row; */
-    /* z-index: -5; */
-    /* align-content: space-between; */
+  background-color: var(--tertiary-grey);
 }
 
 .reviews h4 {
   text-align: center;
   padding: 10px 0px;
 }
-
-/* i can't get this to flex correctly - E */
-
-
-/* "reviews" and related classes will need to be updated or reveiwed, should 
-be overwritten but what comes underneath it though- E */
-
-
-
-/* .reviews-image { */
-    /* max-width: 30%; */
-    /* align-content: center; */
-/* } */
-/*  */
-/* .reviews-image img { */
-    /* margin: 20px 10px; */
-    /* width: 100%; */
-    /* align-items: center; */
-/* } */
-
 
 .slide-wrap {
   position: relative;
@@ -525,7 +482,6 @@ be overwritten but what comes underneath it though- E */
   left: 0;
   right: 0;
   margin:0 auto;
-  /* text-align: center; */
   z-index: 20;
   opacity: 0;
   visibility: hidden;
@@ -539,15 +495,6 @@ be overwritten but what comes underneath it though- E */
     visibility: visible;
     justify-content: center;
   }
-
-/* .kids-reviews { */
-  /* display: flex; */
-  /* flex-direction: column; */
-/* } */
-
-/* .new-reviews { */
-  /* flex-direction: column; */
-/* }  */
 
 .slide-content {
   display: flex;
@@ -588,7 +535,6 @@ be overwritten but what comes underneath it though- E */
 .slide-nav {
   display: flex;
   justify-content: space-between;
-
   position: absolute;
   left: 0;
   bottom: 0;
@@ -601,11 +547,10 @@ be overwritten but what comes underneath it though- E */
 }
 
 .slide-nav li {
-    cursor: pointer;
-    color: var(--secondary-red);
-    /* background-color: var(--secondary-grey); */
-    font-size: 150px;
-    z-index: 999;
+  cursor: pointer;
+  color: var(--secondary-red);
+  font-size: 150px;
+  z-index: 999;
   }
 
 #prev-slide {
@@ -616,36 +561,29 @@ be overwritten but what comes underneath it though- E */
   margin-right:-20px;
 }
 
-
-
-
-
-/******************************************************** end homepage image
-slider **************************************************/
-
-
+/********end homepage image slider **************/
 
 .reviews-text {
-    background-color: var(--primary-white);
-    margin: 25px;
-    padding: 50px;
-    border-color: var(--secondary-grey);
-    border-style: solid;
-    border-width: 10px;
-    max-width: 40%;
+  background-color: var(--primary-white);
+  margin: 25px;
+  padding: 50px;
+  border-color: var(--secondary-grey);
+  border-style: solid;
+  border-width: 10px;
+  max-width: 40%;
 }
 
 .right-justify {
-    text-align: right;
+  text-align: right;
 }
 
 footer {
-    border-top-color: var(--primary-white);
-    border-top-style: solid;
-    border-top-width: 5px;
-    background-color: var(--secondary-grey);
-    display: flex;
-    justify-content: space-between;
+  border-top-color: var(--primary-white);
+  border-top-style: solid;
+  border-top-width: 5px;
+  background-color: var(--secondary-grey);
+  display: flex;
+  justify-content: space-between;
 }
 
 footer img {
@@ -758,7 +696,6 @@ a#btn {
 }
 
 /******** Pizza Pop-Up Ad Styling ************/
-
 
 .pizzaad {
   position: fixed;
@@ -892,7 +829,8 @@ span.pizza-bold {
   color: #009635;
 }
 
-/******************************** About Pages Styling ************/
+/*********** About Pages Styling ************/
+
 .about-page{
   display: flex;
   flex-direction: column;
@@ -1044,7 +982,6 @@ h6 {
   text-transform: uppercase;
 }
 
-
 .grey{
   background-color: rgb(236, 229, 229);
 }
@@ -1062,8 +999,8 @@ h6 {
   min-width: 200px;
 }
 
-
 /************************************** Weather API **********************************************/
+
 .popup .overlay {
   position:fixed;
   top:0px;
@@ -1091,23 +1028,12 @@ h6 {
   border-radius: 30px;
   box-shadow: 0px 1px 13px 5px #0000001f;
 }
-
-/*.weather-container {
-  background: #02394ee8;
-  color: #fff;
-  padding: 2em;
-  border-radius: 30px;
-  width: 100%;
-  max-width: 420px;
-  margin: 1em;
-  box-shadow: 0px 1px 13px 5px #011b259e;
-  }*/
  
 .popup .close-btn {
   cursor:pointer;
   position:absolute;
   right: 14px;
-    top: 9px;
+  top: 9px;
   width:30px;
   height:30px;
   background:#222;
@@ -1141,20 +1067,20 @@ h2.temp {
 }
 
 .search {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 input.search-bar {
-border: none;
-outline: none;
-padding: 0.4em 1em;
-border-radius: 24px;
-background: #fff;
-color: #333;
-font-size: .8em;
-width: calc(85% - 95px);
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #fff;
+  color: #333;
+  font-size: .8em;
+  width: calc(85% - 95px);
 }
 
 .weather{
@@ -1163,27 +1089,26 @@ width: calc(85% - 95px);
 }
 
 .wthr-btn{
-margin: 0.5em;
-border-radius: 100%;
-border: none;
-height: 45px;
-width: 30px;
-outline: none;
-background: #fff;
-color: #333;
-cursor: pointer;
-transition: 0.3s ease-in-out;
-padding: 24px;
+  margin: 0.5em;
+  border-radius: 100%;
+  border: none;
+  height: 45px;
+  width: 30px;
+  outline: none;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  padding: 24px;
 }
 
 .wthr-btn:hover {
-background: #00000066;
+  background: #00000066;
 }
 
 svg {
   margin: -12px -10px 0;
 }
-
 
 .description {
   font-weight: 300;
@@ -1210,11 +1135,22 @@ svg {
 
 /********************************************* Media Queries **********************************************/
 
-@media screen and (min-width: 1000px) {
-  .options {
-    display: flex;
+
+@media screen and (min-width: 1400px) { 
+  .slide-txt {
+    font-size: 23px;
   }
-} 
+}
+
+@media (min-width: 1200px) {
+  .goal,
+  .working-together,
+  .support,
+  .league,
+  .weather{
+  margin: 0 20%;
+    }
+  }
 
 @media screen and (min-width: 1200px) {
   .slide-content {
@@ -1238,79 +1174,75 @@ svg {
   }
 }
 
-@media screen and (min-width: 1400px) { 
-  .slide-txt {
-    font-size: 23px;
+@media screen and (min-width: 1000px) {
+  .options {
+    display: flex;
+  }
+} 
+
+@media (min-width: 650px) {
+  .about-page h2{
+    font-size: 1.3em;
+  }
+
+  .about-page h4{
+    font-size: .8em;
   }
 }
 
-
-@media (min-width: 650px) {
-.about-page h2{
-  font-size: 1.3em;
-}
-
-.about-page h4{
-  font-size: .8em;
-}
+@media(max-width: 670px) {
+    
+  .block-1 {
+    width: 40%;
+  }
 }
 
 /******** Pizza Pop-Up Ad Media Queries ************/
 
 @media (max-width : 750px) {
-  .contbox {
-      width: 300px;
-      height: auto;
-      flex-direction: column;
-      border-radius: 20px;
+
+.contbox {
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+    border-radius: 20px;
   }
   .contbox .imgbox {
-      height: 200px;
-      transform: translateY(-50px);
+    height: 200px;
+    transform: translateY(-50px);
   }
   .contbox .cont h3 {
-      margin-top: -23px;
+    margin-top: -23px;
   }
   .contbox .cont p {
-      margin: 45px 11px 1px;
+    margin: 45px 11px 1px;
   }
   .contbox .imgbox::before {
-      background: #fff;
+    background: #fff;
   }
   .contbox .cont a {
-      margin-bottom: 24px;
+    margin-bottom: 24px;
   }
   .contbox .imgbox img {
-      max-width: 400px;
-      margin: 43px 0 0 56px;
+    max-width: 400px;
+    margin: 43px 0 0 56px;
   }
   .contbox .cont {
-      height: auto;
-      text-align: center;
-      padding-top: 0;
+    height: auto;
+    text-align: center;
+    padding-top: 0;
   }
   .close {
-      top: -50px;
-      right: -6px;
-      background: #fff url(images/close.png);
-      background-repeat: no-repeat;
-      background-size: 12px;
-      background-position: center;
-      cursor: pointer;
+    top: -50px;
+    right: -6px;
+    background: #fff url(images/close.png);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+    cursor: pointer;
   }
 }
 /******** END Pizza Pop-Up Ad Media Queries ************/
-
-
-@media (min-width: 1200px) {
-  .goal,
-  .working-together,
-  .support,
-  .league,
-  .weather{
-  margin: 0 20%;
-    }
-  }
 
   @media(max-width: 570px) {
 
@@ -1351,6 +1283,33 @@ svg {
   }
 }
 
+@media(max-width: 530px) {
+  .shows-mission h2 {
+    margin: 0px;
+  }
+}
+
+@media(max-width: 460px) {
+  .block-1 {
+    width: 83%;
+  }
+
+  .shows-mission h2 {
+    font-size: 24pt;
+  }
+
+  p.shows-type {
+    font-size: 13pt;
+    letter-spacing: .5px;
+    margin: 20px -13% -8px;
+    line-height: 25px;
+  }
+
+  h2.upcoming-head {
+    font-size: 2rem;
+    letter-spacing: 0.25px;
+  }
+}
 
   @media(max-width: 440px) {
 
@@ -1358,120 +1317,32 @@ svg {
     margin: 11px;
     width: 65%;
   }
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  @media(max-width: 420px) {
+
+  .shows-mission h2 {
+      margin: 0;
+    }
+
+  p.shows-type {
+    padding: 0;
+  }
+
+  hr {
+    width: 72%;
+    margin: 7% auto;
+  }
+}
+
+  @media(max-width: 330px) {
+
+  .shows-mission {
+    padding: 23px 45px 31px;
+  }
+
+  hr {
+    width: 62%;
+    margin: 8% auto;
+  }
+}

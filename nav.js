@@ -80,7 +80,6 @@ function myFunction() {
   }
 }
 
-
 // hamburger menu vanilla JS https://codepen.io/sitanotern1337/pen/xyQppZ
 
 // var hamburger = document.querySelector('.hamburger');
