@@ -663,7 +663,7 @@ h2.upcoming-head {
   line-height: 21px;
 }
 
-a#btn {
+a.btn1 {
   background: #d61d55;
   cursor: pointer;
   display: inline-block;
@@ -679,7 +679,7 @@ a#btn {
   margin: 0px 0 17px;
 }
 
-#btn:hover {
+.btn1:hover {
 	background-color: #80777a;
 	transition: .5s;
 }

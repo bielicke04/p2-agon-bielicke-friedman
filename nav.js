@@ -79,15 +79,3 @@ function readmoreFunction() {
     moreText.style.display = "inline"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
