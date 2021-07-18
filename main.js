@@ -8,7 +8,7 @@ function togglePopup(){
 var weather = {
   "apiKey": "c9e8a1e5219afb02e36d02feb8ea798b",
   fetchWeather: function (city) {
-      fetch("http://api.openweathermap.org/data/2.5/weather?q="
+      fetch("https://api.openweathermap.org/data/2.5/weather?q="
       + city
       + "&units=imperial&appid="
       + this.apiKey
