@@ -283,16 +283,10 @@ header ul li {
 
 /* *****************************sticky header *****************************/
 
-
-
 form {
   padding-top: 0px;
   font-weight: normal;
 }
-
-/* .sticky { */
-    /* padding-top: 102px; */
-/* } */
 
 .sticky-header #submit, 
 .sticky #submit {
@@ -556,7 +550,7 @@ button:hover, button:focus {
   margin-right:-20px;
 }
 
-/********end homepage image slider **************/
+/******** end homepage image slider **************/
 
 .reviews-text {
   background-color: var(--primary-white);
@@ -904,7 +898,7 @@ p.red-p-title {
   text-align: center;
   }
 
-  #wthr-btn:hover {
+#wthr-btn:hover {
   background-color: #80777a;
   transition: .5s;
   }
@@ -977,7 +971,7 @@ h6 {
   text-transform: uppercase;
 }
 
-.grey{
+.grey {
   background-color: rgb(236, 229, 229);
 }
 
@@ -994,7 +988,7 @@ h6 {
   min-width: 200px;
 }
 
-/************************************** Weather API **********************************************/
+/************************ Weather API **********************************/
 
 .popup .overlay {
   position:fixed;
@@ -1128,7 +1122,7 @@ svg {
 }
 
 
-/********************************************* Media Queries **********************************************/
+/**************** Media Queries ***********************/
 
 
 @media screen and (min-width: 1400px) { 
