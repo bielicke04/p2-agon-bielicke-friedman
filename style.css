@@ -281,35 +281,27 @@ header ul li {
   margin-right: 15px;
 }
 
-form, 
-#sticky-header p {
-  background-color: var(--secondary-grey);
-  color: var(--primary-white);
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-  padding: 10px 0;
-}
+/* *****************************sticky header *****************************/
+
+
 
 form {
   padding-top: 0px;
   font-weight: normal;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+/* .sticky { */
+    /* padding-top: 102px; */
+/* } */
 
-#sticky-header #submit, 
+.sticky-header #submit, 
 .sticky #submit {
   background-color: var(--primary-white);
   color: var(--primary-black);
   padding: 5px 10px;
 }
 
-#sticky-header #clear, 
+.sticky-header #clear, 
 .sticky #clear {
   background-color: var(--primary-white);
   color: var(--secondary-red);
@@ -339,12 +331,19 @@ section.read-more {
   display: none;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .read-btn {
   text-align: center;
   margin: 15px 0 18px;
 }
 
-a#moreBtn {
+#moreBtn {
   background-color: var(--secondary-grey);
   color: var(--primary-white);
   padding: 5px 20px;
@@ -356,14 +355,10 @@ a#moreBtn {
   font-size: .9rem;
 }
 
-a#moreBtn:hover {
+#moreBtn:hover {
   background-color: var(--primary-white);
   color: #d61d55;
   transition: 0.3s;
-}
-
-.sticky {
-  padding-top: 102px;
 }
 
 .hero-image {
