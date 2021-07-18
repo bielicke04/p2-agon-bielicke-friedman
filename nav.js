@@ -1,24 +1,3 @@
-// Sticky Header https://www.w3schools.com/howto/howto_js_sticky_header.asp
-
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("sticky-header");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-
 // login/local storage JS from Lee's lecture
 
 var form = document.querySelector('form')
@@ -62,9 +41,30 @@ clear.onclick = function () {
   nameEl.textContent = 'Already registered with Broadway Bridges? Please login below!'
 }
 
+// Sticky Header https://www.w3schools.com/howto/howto_js_sticky_header.asp
+
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function () { myFunction() };
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. 
+// Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
 //  Read more button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_read_more
 
-function myFunction() {
+function readmoreFunction() {
   var dots = document.getElementById("dots")
   var moreText = document.getElementById("more")
   var btnText = document.getElementById("moreBtn")
@@ -81,14 +81,15 @@ function myFunction() {
 }
 
 
-// hamburger menu vanilla JS https://codepen.io/sitanotern1337/pen/xyQppZ
 
-// var hamburger = document.querySelector('.hamburger');
-// var menu = document.querySelector('.navbar');
-// var bod = document.querySelector('.container');
 
-// hamburger.addEventListener('click', function () {
-//   hamburger.classList.toggle('isactive');
-//   menu.classList.toggle('active');
 
-// });
+
+
+
+
+
+
+
+
+
