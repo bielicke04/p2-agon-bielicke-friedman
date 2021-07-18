@@ -283,10 +283,53 @@ header ul li {
 
 /* *****************************sticky header *****************************/
 
+/* form { */
+  /* padding-top: 0px; */
+  /* font-weight: normal; */
+/* } */
+/*  */
+/* .sticky-header #submit,  */
+/* .sticky #submit { */
+  /* background-color: var(--primary-white); */
+  /* color: var(--primary-black); */
+  /* padding: 5px 10px; */
+/* } */
+/*  */
+/* .sticky-header #clear,  */
+/* .sticky #clear { */
+  /* background-color: var(--primary-white); */
+  /* color: var(--secondary-red); */
+  /* padding: 5px 10px; */
+/* } */
+
+/* corrected CSS from last night copied to main on sunday */
+
+form, 
+.sticky-header p {
+    background-color: var(--secondary-grey);
+    color: var(--primary-white);
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+}
+
 form {
   padding-top: 0px;
   font-weight: normal;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+    /* padding-top: 102px; */
+}
+
+/* .sticky { */
+    /* padding-top: 102px; */
+/* } */
 
 .sticky-header #submit, 
 .sticky #submit {
@@ -301,6 +344,7 @@ form {
   color: var(--secondary-red);
   padding: 5px 10px;
 }
+
 
 /************** readmore button *********************/
 
@@ -354,6 +398,9 @@ section.read-more {
   color: #d61d55;
   transition: 0.3s;
 }
+
+/********************************** end of readmore section 
+*******************************/
 
 .hero-image {
   width: 100%;
