@@ -1214,10 +1214,6 @@ svg {
   .options {
     display: flex;
   }
-  /* .reviews { */
-      /* display: flex; */
-      /* flex-direction: row; */
-  /* } */
 } 
 
 @media screen and (min-width: 1200px) {
@@ -1235,15 +1231,11 @@ svg {
     max-width: 100%;
   }
 
-
-  /* ideally, the images align to the top */
-
   .slide-txt {
     padding: 0 2rem;
     max-width: 50%;
     font-size: 18px;
   }
-
 }
 
 @media screen and (min-width: 1400px) { 
@@ -1316,9 +1308,58 @@ svg {
   .support,
   .league,
   .weather{
-    margin: 0 20%;
+  margin: 0 20%;
+    }
   }
+
+  @media(max-width: 570px) {
+
+    .about-page h4 {
+      line-height: 28px;
+      font-size: .6em;
+    }
+
+    .about-page p {
+      line-height: 35px;
+    }
+
+    #wthr-btn {
+      margin: -6px 19% 29px;
+    }
+
+    p.red-p-title {
+      font-size: .6em;
+      line-height: 38px;
+    }
+
+    .footer-logo {
+      width: 90%;
   }
+
+    footer img {
+      margin: 11px;
+      width: 50%;
+    }
+
+    .social-logos {
+      margin-top: 11px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 16px 0 0;
+  }
+}
+
+
+  @media(max-width: 440px) {
+
+  footer img {
+    margin: 11px;
+    width: 65%;
+  }
+
+}
 
 
 
